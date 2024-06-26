@@ -58,12 +58,15 @@ const checkCollision = () => {
     ) {
         // Emoji is inside the target box
         // Add your desired event code here
-        console.log("myBox is inside targetBox");
+
+        // console.log("myBox is inside targetBox");
+
         // Your event code here
         myCongrats.innerHTML = `<p>Wow... Now that's good arrow key skills!!</p><br>
         <p>You should work for NASA.. 😅 </p>
         <img src="./assests/nasa.png" alt="Congratulations" style="width: 60px; height: 50px;"> `;
         myCongrats.style.display = "block";
+        myBox.textContent = "😄";
     } else {
         // Emoji is not inside the target box
         myCongrats.style.display = "none";
